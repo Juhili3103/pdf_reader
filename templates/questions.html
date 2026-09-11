@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generated Questions</title>
+</head>
+<body>
+    <h1>Questions Generated from PDF</h1>
+    <ul>
+        {% for question in questions %}
+            <li>{{ question }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Upload another PDF</a>
+</body>
+</html>
